@@ -46,7 +46,7 @@ MIN_CONTENT_LEN     = 200
 # Ollama
 OLLAMA_BASE_URL    = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").replace("/v1","")
 # 🔥 긴 텍스트에 적합한 모델 기본값
-OLLAMA_EMBED_MODEL = os.getenv("OLLAMA_EMBED_MODEL", "mxbai-embed-large")
+OLLAMA_EMBED_MODEL = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
 
 # 긴 텍스트 대비 파라미터 (필요하면 .env로 조절)
 CHUNK_CHARS        = int(os.getenv("CHUNK_CHARS", "1800"))    # 1800자 정도
